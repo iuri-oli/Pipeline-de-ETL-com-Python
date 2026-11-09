@@ -7,8 +7,6 @@ users = pd.read_csv('SDW2023.csv').to_dict(orient='records')
 for user in users:
     user['news'] = []
 
-import pandas as pd
-
 df = pd.read_csv('SDW2023.csv')
 user_ids = df['UserID'].tolist()
 print(user_ids)
